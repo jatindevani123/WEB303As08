@@ -1,0 +1,51 @@
+[
+    {
+       "name":"Harry Potter",
+       "book":"Harry Potter and the Philosopher's Stone",
+       "gender":"Male",
+       "age":20,
+       "occupation":"Student"
+    },
+    {
+       "name":"Hermione Granger",
+       "book":"Harry Potter and the Philosopher's Stone",
+       "gender":"Female",
+       "age":23,
+       "occupation":"Student"
+    },
+    {
+       "name":"Bilbo Baggins",
+       "book":"The Hobbit",
+       "gender":"Male",
+       "age":50,
+       "occupation":"Adventurer"
+    },
+    {
+       "name":"Frodo Baggins",
+       "book":"The Lord of the Rings",
+       "gender":"Male",
+       "age":33,
+       "occupation":"Ring-bearer"
+    },
+    {
+       "name":"Gandalf",
+       "book":"The Lord of the Rings",
+       "gender":"Male",
+       "age":18,
+       "occupation":"Wizard"
+    },
+    {
+       "name":"Katniss Everdeen",
+       "book":"The Hunger Games",
+       "gender":"Female",
+       "age":24,
+       "occupation":"Tribute"
+    },
+    {
+       "name":"Sherlock Holmes",
+       "book":"A Study in Scarlet",
+       "gender":"Male",
+       "age":19,
+       "occupation":"Detective"
+    }
+ ]
