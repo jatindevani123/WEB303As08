@@ -1,21 +1,81 @@
-$(document).ready(function() {
-    $.ajax({
-        type: "GET",
-        url: "characters.json",
-        dataType: "json",
-        success: function(data) {
-            $.each(data, function(i, character) {
-                var row = $("<tr>");
-                row.append($("<td>").text(character.name));
-                row.append($("<td>").text(character.book));
-                row.append($("<td>").text(character.gender));
-                row.append($("<td>").text(character.age));
-                row.append($("<td>").text(character.occupation));
-                $("#characters-table tbody").append(row);
-            });
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-            console.log("Error: " + textStatus + " - " + errorThrown);
+$(document).ready(function () {
+    // Load JSON data
+    $.getJSON("characters.json", function (data) {
+      $.each(data, function (key, value) {
+        $("#characters tbody").append(
+          "<tr>" +
+            "<td>" +
+            value.firstName +
+            "</td>" +
+            "<td>" +
+            value.lastName +
+            "</td>" +
+            "<td>" +
+            value.book +
+            "</td>" +
+            "<td>" +
+            value.age +
+            "</td>" +
+            "<td>" +
+            value.gender +
+            "</td>" +
+            "<td>" +
+            value.occupation +
+            "</td>" +
+            "<td>" +
+            value.location +
+            "</td>" +
+            "</tr>"
+        );
+      });
+  
+      // Filter buttons
+      var numAtoM = 0;
+      var numNtoZ = 0;
+      $("#characters tbody tr").each(function () {
+        var lastName = $(this)
+          .find("td:nth-child(2)")
+          .text()
+          .charAt(0)
+          .toUpperCase();
+        if (lastName >= "A" && lastName <= "M") {
+          $(this).addClass("atoM");
+          numAtoM++;
+        } else {
+          $(this).addClass("nToZ");
+          numNtoZ++;
         }
+      });
+      $("#btnAtoM").text("A to M (" + numAtoM + ")");
+      $("#btnNtoZ").text("N to Z (" + numNtoZ + ")");
+  
+      // Search
+      $("#search").on("input", function () {
+        var searchTerm = $(this).val().toLowerCase();
+        if (searchTerm == "") {
+          $("#characters tbody tr").removeClass("highlight");
+        } else {
+          $("#characters tbody tr").each(function () {
+            var firstName = $(this).find("td:first-child").text().toLowerCase();
+            if (firstName.includes(searchTerm)) {
+              $(this).addClass("highlight");
+            } else {
+              $(this).removeClass("highlight");
+            }
+          });
+        }
+      });
+  
+      // Filter buttons click event
+      $("#btnAtoM").on("click", function () {
+        $("#characters tbody tr.nToZ").hide();
+        $("#characters tbody tr.atoM").show();
+      });
+  
+      $("#btnNtoZ").on("click", function () {
+        $("#characters tbody tr.atoM").hide();
+        $("#characters tbody tr.nToZ").show();
+      });
     });
-});
+  });
+  

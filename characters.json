@@ -1,51 +1,66 @@
 [
     {
-       "name":"Harry Potter",
-       "book":"Harry Potter and the Philosopher's Stone",
-       "gender":"Male",
-       "age":20,
-       "occupation":"Student"
+      "firstName": "Harry",
+      "lastName": "Potter",
+      "book": "Harry Potter and the Philosopher's Stone",
+      "gender": "Male",
+      "age": 20,
+      "occupation": "Student",
+      "location": "ON,Canada"
     },
     {
-       "name":"Hermione Granger",
-       "book":"Harry Potter and the Philosopher's Stone",
-       "gender":"Female",
-       "age":23,
-       "occupation":"Student"
+      "firstName": "Hermione",
+      "lastName": "Granger",
+      "book": "Harry Potter and the Philosopher's Stone",
+      "gender": "Female",
+      "age": 23,
+      "occupation": "Student",
+      "location": "BC,Canada"
     },
     {
-       "name":"Bilbo Baggins",
-       "book":"The Hobbit",
-       "gender":"Male",
-       "age":50,
-       "occupation":"Adventurer"
+      "firstName": "Bilbo",
+      "lastName": "Baggins",
+      "book": "The Hobbit",
+      "gender": "Male",
+      "age": 50,
+      "occupation": "Adventurer",
+      "location": "ON,Canada"
     },
     {
-       "name":"Frodo Baggins",
-       "book":"The Lord of the Rings",
-       "gender":"Male",
-       "age":33,
-       "occupation":"Ring-bearer"
+      "firstName": "Frodo",
+      "lastName": "Baggins",
+      "book": "The Lord of the Rings",
+      "gender": "Male",
+      "age": 33,
+      "occupation": "Ring-bearer",
+      "location": "AB,Canada"
     },
     {
-       "name":"Gandalf",
-       "book":"The Lord of the Rings",
-       "gender":"Male",
-       "age":18,
-       "occupation":"Wizard"
+      "firstName": "Patel",
+      "lastName": "Gandalf",
+      "book": "The Lord of the Rings",
+      "gender": "Male",
+      "age": 18,
+      "occupation": "Wizard",
+      "location": "NY,USA"
     },
     {
-       "name":"Katniss Everdeen",
-       "book":"The Hunger Games",
-       "gender":"Female",
-       "age":24,
-       "occupation":"Tribute"
+      "firstName": "Katniss",
+      "lastName": "Everdeen",
+      "book": "The Hunger Games",
+      "gender": "Female",
+      "age": 24,
+      "occupation": "Tribute",
+      "location": "ON,Canada"
     },
     {
-       "name":"Sherlock Holmes",
-       "book":"A Study in Scarlet",
-       "gender":"Male",
-       "age":19,
-       "occupation":"Detective"
+      "firstName": "Sherlock",
+      "lastName": "Holmes",
+      "book": "A Study in Scarlet",
+      "gender": "Male",
+      "age": 19,
+      "occupation": "Detective",
+      "location": "BC,Canada"
     }
- ]
+  ]
+  
